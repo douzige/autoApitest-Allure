@@ -1,0 +1,93 @@
+{
+  "uid" : "c2d6ccc07a87c18d",
+  "name" : "test_req",
+  "fullName" : "testCase.caseTwo.test_http.TestHttp#test_req",
+  "historyId" : "4fff228b8f44b81259de46d52f5e93cd",
+  "time" : {
+    "start" : 1567599529650,
+    "stop" : 1567599529690,
+    "duration" : 40
+  },
+  "description" : "测试http请求情况！",
+  "descriptionHtml" : "<p>测试http请求情况！</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "init",
+    "time" : {
+      "start" : 1567599529649,
+      "stop" : 1567599529649,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "测试http请求情况！",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "9ac892634232905b",
+      "name" : "stdout",
+      "source" : "9ac892634232905b.txt",
+      "type" : "text/plain",
+      "size" : 292
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "使用pytst+allure的demo-->http请求"
+  }, {
+    "name" : "story",
+    "value" : "测试一个http的get请求"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.caseTwo"
+  }, {
+    "name" : "suite",
+    "value" : "test_http"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestHttp"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-PI4KT4H"
+  }, {
+    "name" : "thread",
+    "value" : "15332-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.caseTwo.test_http"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c2d6ccc07a87c18d.json",
+  "parameterValues" : [ ]
+}

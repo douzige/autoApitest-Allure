@@ -1,0 +1,253 @@
+{
+  "uid" : "37a285df5a5618df",
+  "name" : "test_post_def[1-data0-正确的账号密码]",
+  "fullName" : "testCase.caseTwo.test_http.TestHttp#test_post_def",
+  "historyId" : "d1915f746d0a10a1aae0ca3ce0238aae",
+  "time" : {
+    "start" : 1567599656203,
+    "stop" : 1567599656225,
+    "duration" : 22
+  },
+  "status" : "passed",
+  "flaky" : true,
+  "beforeStages" : [ {
+    "name" : "init",
+    "time" : {
+      "start" : 1567599656165,
+      "stop" : 1567599656165,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "d1f3548848c9cfb3",
+      "name" : "stdout",
+      "source" : "d1f3548848c9cfb3.txt",
+      "type" : "text/plain",
+      "size" : 407
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试一个http post请求"
+  }, {
+    "name" : "feature",
+    "value" : "使用pytst+allure的demo-->http请求"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.caseTwo"
+  }, {
+    "name" : "suite",
+    "value" : "test_http"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestHttp"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-PI4KT4H"
+  }, {
+    "name" : "thread",
+    "value" : "14444-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.caseTwo.test_http"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "data",
+    "value" : "{'userName': 'admin', 'passWord': '123456'}"
+  }, {
+    "name" : "des",
+    "value" : "'正确的账号密码'"
+  }, {
+    "name" : "flag",
+    "value" : "1"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "893a70ac6dee8823",
+      "status" : "passed",
+      "time" : {
+        "start" : 1567599529694,
+        "stop" : 1567599529717,
+        "duration" : 23
+      }
+    }, {
+      "uid" : "aa74eefd89875e72",
+      "status" : "passed",
+      "time" : {
+        "start" : 1567598738737,
+        "stop" : 1567598738759,
+        "duration" : 22
+      }
+    }, {
+      "uid" : "ef635dc9904c778",
+      "status" : "passed",
+      "time" : {
+        "start" : 1567597625561,
+        "stop" : 1567597627375,
+        "duration" : 1814
+      }
+    }, {
+      "uid" : "5d00cee4c26e1e64",
+      "status" : "broken",
+      "statusDetails" : "_pytest.fixtures.FixtureLookupError: ('init', <FixtureRequest for <Function test_post_def[1-data0-\\u6b63\\u786e\\u7684\\u8d26\\u53f7\\u5bc6\\u7801]>>)",
+      "time" : {
+        "start" : 1567597555616,
+        "stop" : 1567597555616,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "be0fcfe20a992cee",
+      "status" : "passed",
+      "time" : {
+        "start" : 1567596368908,
+        "stop" : 1567596368936,
+        "duration" : 28
+      }
+    }, {
+      "uid" : "9842177185e9ecf6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1567595964968,
+        "stop" : 1567595965003,
+        "duration" : 35
+      }
+    }, {
+      "uid" : "d5e7def01be92fde",
+      "status" : "passed",
+      "time" : {
+        "start" : 1567595847206,
+        "stop" : 1567595847230,
+        "duration" : 24
+      }
+    }, {
+      "uid" : "66009b674f5d1faf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1567595820338,
+        "stop" : 1567595820364,
+        "duration" : 26
+      }
+    }, {
+      "uid" : "1d239b22c6e79f56",
+      "status" : "passed",
+      "time" : {
+        "start" : 1567595594846,
+        "stop" : 1567595594873,
+        "duration" : 27
+      }
+    }, {
+      "uid" : "265d5b2f2e24c32c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1567595397718,
+        "stop" : 1567595397741,
+        "duration" : 23
+      }
+    }, {
+      "uid" : "981a53b4d48da12d",
+      "status" : "broken",
+      "statusDetails" : "NameError: name 'json' is not defined",
+      "time" : {
+        "start" : 1567595320291,
+        "stop" : 1567595320291,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "28df413fbfa89fe",
+      "status" : "broken",
+      "statusDetails" : "Exception: 接口访问异常信息：",
+      "time" : {
+        "start" : 1567595268926,
+        "stop" : 1567595268927,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "726094f60ccf94ee",
+      "status" : "broken",
+      "statusDetails" : "Exception: 接口访问异常信息：",
+      "time" : {
+        "start" : 1567595238180,
+        "stop" : 1567595238181,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "80006f9755163bcb",
+      "status" : "broken",
+      "statusDetails" : "Exception: 接口访问异常信息：",
+      "time" : {
+        "start" : 1567595216646,
+        "stop" : 1567595216647,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "e5ff79175f87a5d4",
+      "status" : "broken",
+      "statusDetails" : "Exception: 接口访问异常信息：",
+      "time" : {
+        "start" : 1567595193897,
+        "stop" : 1567595193898,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "e8f13abb1f44b19",
+      "status" : "broken",
+      "statusDetails" : "Exception: 接口访问异常信息：",
+      "time" : {
+        "start" : 1567595124421,
+        "stop" : 1567595124422,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "d5c8a7681b34ab4b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1567594369874,
+        "stop" : 1567594369962,
+        "duration" : 88
+      }
+    }, {
+      "uid" : "bea9095cc127c2b",
+      "status" : "broken",
+      "statusDetails" : "_pytest.fixtures.FixtureLookupError: ('init', <FixtureRequest for <Function test_post_def[1-data0-\\u6b63\\u786e\\u7684\\u8d26\\u53f7\\u5bc6\\u7801]>>)",
+      "time" : {
+        "start" : 1567594286569,
+        "stop" : 1567594286569,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "37a285df5a5618df.json",
+  "parameterValues" : [ "{'userName': 'admin', 'passWord': '123456'}", "'正确的账号密码'", "1" ]
+}

@@ -1,0 +1,81 @@
+[ {
+  "uid" : "37a285df5a5618df",
+  "name" : "test_post_def[1-data0-正确的账号密码]",
+  "time" : {
+    "start" : 1567599656203,
+    "stop" : 1567599656225,
+    "duration" : 22
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2ac5d19ff3d296dc",
+  "name" : "test_add[3-7-10-用例描述3]",
+  "time" : {
+    "start" : 1567599655020,
+    "stop" : 1567599656120,
+    "duration" : 1100
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ff4096e612188285",
+  "name" : "test_req",
+  "time" : {
+    "start" : 1567599656166,
+    "stop" : 1567599656198,
+    "duration" : 32
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7de162e5bf25d74",
+  "name" : "test_add_a",
+  "time" : {
+    "start" : 1567599656139,
+    "stop" : 1567599656139,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "c3258563cc980e16",
+  "name" : "test_add_b",
+  "time" : {
+    "start" : 1567599656150,
+    "stop" : 1567599656150,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "15ba987b6695a18c",
+  "name" : "test_add[1-2-4-用例描述1]",
+  "time" : {
+    "start" : 1567599652738,
+    "stop" : 1567599653839,
+    "duration" : 1101
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "27d982e75025b445",
+  "name" : "test_add[2-4-6-用例描述2]",
+  "time" : {
+    "start" : 1567599653911,
+    "stop" : 1567599655012,
+    "duration" : 1101
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1e0e56675abb7fac",
+  "name" : "test_post_def[2-data1-错误的账号密码]",
+  "time" : {
+    "start" : 1567599656232,
+    "stop" : 1567599656255,
+    "duration" : 23
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

@@ -1,0 +1,99 @@
+{
+  "uid" : "cc750b06f59c43c4",
+  "name" : "test_post_def[2-data1-错误的账号密码]",
+  "fullName" : "testCase.caseOne.test_calc.TestCalc#test_post_def",
+  "historyId" : "419e1cfc1b6c6e86fc107b331d53fc82",
+  "time" : {
+    "start" : 1567595594881,
+    "stop" : 1567595594914,
+    "duration" : 33
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "init",
+    "time" : {
+      "start" : 1567595594805,
+      "stop" : 1567595594805,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "5e143b6a15ec044a",
+      "name" : "stdout",
+      "source" : "5e143b6a15ec044a.txt",
+      "type" : "text/plain",
+      "size" : 546
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "测试一个http post请求"
+  }, {
+    "name" : "feature",
+    "value" : "使用pytst+allure的demo"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.caseOne"
+  }, {
+    "name" : "suite",
+    "value" : "test_calc"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCalc"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-PI4KT4H"
+  }, {
+    "name" : "thread",
+    "value" : "19064-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.caseOne.test_calc"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "data",
+    "value" : "{'userName': 'admin', 'passWord': '12345'}"
+  }, {
+    "name" : "des",
+    "value" : "'错误的账号密码'"
+  }, {
+    "name" : "flag",
+    "value" : "2"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "cc750b06f59c43c4.json",
+  "parameterValues" : [ "{'userName': 'admin', 'passWord': '12345'}", "'错误的账号密码'", "2" ]
+}

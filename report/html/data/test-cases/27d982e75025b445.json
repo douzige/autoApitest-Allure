@@ -1,0 +1,179 @@
+{
+  "uid" : "27d982e75025b445",
+  "name" : "test_add[2-4-6-用例描述2]",
+  "fullName" : "testCase.caseOne.test_calc.TestCalc#test_add",
+  "historyId" : "9fe14fe7a686528362bbcf015c04a9fe",
+  "time" : {
+    "start" : 1567599653911,
+    "stop" : 1567599655012,
+    "duration" : 1101
+  },
+  "description" : "执行加法测试用例",
+  "descriptionHtml" : "<p>执行加法测试用例</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "foo",
+    "time" : {
+      "start" : 1567599653910,
+      "stop" : 1567599653910,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "执行加法测试用例",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "38b6ace51c1b655c",
+      "name" : "stdout",
+      "source" : "38b6ace51c1b655c.txt",
+      "type" : "text/plain",
+      "size" : 14
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试一个加法运算"
+  }, {
+    "name" : "feature",
+    "value" : "使用pytst+allure的demo-->算数运算"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.caseOne"
+  }, {
+    "name" : "suite",
+    "value" : "test_calc"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCalc"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-PI4KT4H"
+  }, {
+    "name" : "thread",
+    "value" : "14444-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.caseOne.test_calc"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "a",
+    "value" : "2"
+  }, {
+    "name" : "b",
+    "value" : "4"
+  }, {
+    "name" : "c",
+    "value" : "6"
+  }, {
+    "name" : "d",
+    "value" : "'用例描述2'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "c9432c910d66697c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1567599527386,
+        "stop" : 1567599528486,
+        "duration" : 1100
+      }
+    }, {
+      "uid" : "bc8a32fa00843b3f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1567598736390,
+        "stop" : 1567598737490,
+        "duration" : 1100
+      }
+    }, {
+      "uid" : "3fc8fd89e4738ea9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1567597621952,
+        "stop" : 1567597623052,
+        "duration" : 1100
+      }
+    }, {
+      "uid" : "feb04ffbddd164a8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1567597553363,
+        "stop" : 1567597554464,
+        "duration" : 1101
+      }
+    }, {
+      "uid" : "b3aec92e1758e6bc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1567596366634,
+        "stop" : 1567596367734,
+        "duration" : 1100
+      }
+    }, {
+      "uid" : "3863b94f20811ee9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1567595962711,
+        "stop" : 1567595963812,
+        "duration" : 1101
+      }
+    }, {
+      "uid" : "d790e89947790f5f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1567595846054,
+        "stop" : 1567595847154,
+        "duration" : 1100
+      }
+    }, {
+      "uid" : "b7e5c0e2196bbc5c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1567595817958,
+        "stop" : 1567595819081,
+        "duration" : 1123
+      }
+    }, {
+      "uid" : "62be80efb8b5dcbc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1567595592589,
+        "stop" : 1567595593689,
+        "duration" : 1100
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "27d982e75025b445.json",
+  "parameterValues" : [ "2", "4", "6", "'用例描述2'" ]
+}

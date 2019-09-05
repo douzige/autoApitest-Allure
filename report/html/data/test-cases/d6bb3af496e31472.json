@@ -1,0 +1,63 @@
+{
+  "uid" : "d6bb3af496e31472",
+  "name" : "test_req",
+  "fullName" : "testCase.caseTwo.test_http.TestHttp#test_req",
+  "historyId" : "4fff228b8f44b81259de46d52f5e93cd",
+  "time" : {
+    "start" : 1567597555600,
+    "stop" : 1567597555600,
+    "duration" : 0
+  },
+  "description" : "测试http请求情况！",
+  "descriptionHtml" : "<p>测试http请求情况！</p>\n",
+  "status" : "broken",
+  "statusMessage" : "_pytest.fixtures.FixtureLookupError: ('init', <FixtureRequest for <Function test_req>>)",
+  "statusTrace" : "file D:\\PycharmProjects\\autoApitest-Allure\\testCase\\caseTwo\\test_http.py, line 18\n      @allure.story(\"测试一个http的get请求\")\n      def test_req(self, init):\nE       fixture 'init' not found\n>       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, metadata, monkeypatch, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory, worker_id\n>       use 'pytest --fixtures [testpath]' for help on them.\n\nD:\\PycharmProjects\\autoApitest-Allure\\testCase\\caseTwo\\test_http.py:18",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "使用pytst+allure的demo-->http请求"
+  }, {
+    "name" : "story",
+    "value" : "测试一个http的get请求"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.caseTwo"
+  }, {
+    "name" : "suite",
+    "value" : "test_http"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestHttp"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-PI4KT4H"
+  }, {
+    "name" : "thread",
+    "value" : "13488-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.caseTwo.test_http"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d6bb3af496e31472.json",
+  "parameterValues" : [ ]
+}

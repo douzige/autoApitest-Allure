@@ -1,0 +1,62 @@
+{
+  "uid" : "f94e0d3287181c8",
+  "name" : "test_add_b",
+  "fullName" : "testCase.caseOne.test_calc.TestCalc#test_add_b",
+  "historyId" : "11d90497ca798b825984d2fffd7ee1d0",
+  "time" : {
+    "start" : 1567599529639,
+    "stop" : 1567599529640,
+    "duration" : 1
+  },
+  "description" : "测试根据条件故意失败用例",
+  "descriptionHtml" : "<p>测试根据条件故意失败用例</p>\n",
+  "status" : "passed",
+  "statusMessage" : "XPASS 我就是想测试skipif",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试一个加法运算,但是我准备跳过执行"
+  }, {
+    "name" : "feature",
+    "value" : "使用pytst+allure的demo-->算数运算"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.caseOne"
+  }, {
+    "name" : "suite",
+    "value" : "test_calc"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCalc"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-PI4KT4H"
+  }, {
+    "name" : "thread",
+    "value" : "15332-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.caseOne.test_calc"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f94e0d3287181c8.json",
+  "parameterValues" : [ ]
+}

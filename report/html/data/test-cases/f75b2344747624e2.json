@@ -1,0 +1,94 @@
+{
+  "uid" : "f75b2344747624e2",
+  "name" : "test_req",
+  "fullName" : "testCase.caseOne.test_calc.TestCalc#test_req",
+  "historyId" : "4fff228b8f44b81259de46d52f5e93cd",
+  "time" : {
+    "start" : 1567595268871,
+    "stop" : 1567595268872,
+    "duration" : 1
+  },
+  "description" : "测试http请求情况！",
+  "descriptionHtml" : "<p>测试http请求情况！</p>\n",
+  "status" : "broken",
+  "statusMessage" : "Exception: 接口访问异常信息：",
+  "statusTrace" : "seif = <caseOne.test_calc.TestCalc object at 0x000001A83CA8B2E8>, method = 'get'\nurl = 'http://118.24.50.232:8080/demo/get/1', params = None, json_data = None\ncookies = None, headers = None, responseStatus = None, des = '测试测试用例运行情况!'\n\n    def http_req(seif,method, url, params=None, json_data=None, cookies=None,\n                      headers=None, responseStatus=None, des=None):\n        print(u'***********************测试数据日志***********************')\n        err_msg = ''\n        if des:\n            print(\"【测试目的】：%s\" % (des))\n        if len(url)>0:\n            print(u'【请求方法:%s】 %s' % (method, url))\n        if headers != None or headers == '':\n            print(u'【header】：%s' % (json.dumps(headers, indent=4)))\n        if cookies != None or cookies == '':\n            print(u'【cookies】：%s' % (json.dumps(cookies, indent=4)))\n        if params != None and params == '':\n            try:\n                print(u'【Form参数】：')\n                print(\"\\t\",json.dumps(params, indent=4, ensure_ascii=False))\n            except Exception as e:\n                err_msg += '参数json格式化异常：%s\\n' % e\n                print(params)\n    \n        if json_data != None or json_data == '':\n            try:\n                print(u'【Json参数】：')\n                print(\"\\t\",json.dumps(json_data, indent=4, ensure_ascii=False))\n    \n            except Exception as e:\n                err_msg += '参数json格式化异常：%s\\n' % e\n                print(json_data)\n        for i in range(3):\n            try:\n                if method == \"post\":\n                    order = 'requests.' + method + '(\\'' + url + '\\',json= json_data,data=params,headers=headers,cookies=cookies,timeout=10,verify = False)'\n                else:\n                    order = 'requests.' + method + '(\\'' + url + '\\',json= json_data,params=params,headers=headers,cookies=cookies,timeout=10,verify = False)'\n                print(order)\n                response = eval(order)\n                break\n            except Exception as e:\n                print(\"访问异常：%s\\n\" % e)\n                continue\n        try:\n>           print(u'【响应状态】： %s' % (response.status_code))\nE           UnboundLocalError: local variable 'response' referenced before assignment\n\ncommon\\request.py:54: UnboundLocalError\n\nDuring handling of the above exception, another exception occurred:\n\nself = <caseOne.test_calc.TestCalc object at 0x000001A83CA8B2E8>\ninit = ('http://118.24.50.232:8080', {'content-type': 'application/json'})\n\n    @allure.feature(\"测试一个http的get请求\")\n    def  test_req(self,init):\n        '''测试http请求情况！'''\n>       result = self.http_req(\"get\",url=init[0]+\"/demo/get/1\",des=\"测试测试用例运行情况!\")\n\ntestCase\\caseOne\\test_calc.py:39: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nseif = <caseOne.test_calc.TestCalc object at 0x000001A83CA8B2E8>, method = 'get'\nurl = 'http://118.24.50.232:8080/demo/get/1', params = None, json_data = None\ncookies = None, headers = None, responseStatus = None, des = '测试测试用例运行情况!'\n\n    def http_req(seif,method, url, params=None, json_data=None, cookies=None,\n                      headers=None, responseStatus=None, des=None):\n        print(u'***********************测试数据日志***********************')\n        err_msg = ''\n        if des:\n            print(\"【测试目的】：%s\" % (des))\n        if len(url)>0:\n            print(u'【请求方法:%s】 %s' % (method, url))\n        if headers != None or headers == '':\n            print(u'【header】：%s' % (json.dumps(headers, indent=4)))\n        if cookies != None or cookies == '':\n            print(u'【cookies】：%s' % (json.dumps(cookies, indent=4)))\n        if params != None and params == '':\n            try:\n                print(u'【Form参数】：')\n                print(\"\\t\",json.dumps(params, indent=4, ensure_ascii=False))\n            except Exception as e:\n                err_msg += '参数json格式化异常：%s\\n' % e\n                print(params)\n    \n        if json_data != None or json_data == '':\n            try:\n                print(u'【Json参数】：')\n                print(\"\\t\",json.dumps(json_data, indent=4, ensure_ascii=False))\n    \n            except Exception as e:\n                err_msg += '参数json格式化异常：%s\\n' % e\n                print(json_data)\n        for i in range(3):\n            try:\n                if method == \"post\":\n                    order = 'requests.' + method + '(\\'' + url + '\\',json= json_data,data=params,headers=headers,cookies=cookies,timeout=10,verify = False)'\n                else:\n                    order = 'requests.' + method + '(\\'' + url + '\\',json= json_data,params=params,headers=headers,cookies=cookies,timeout=10,verify = False)'\n                print(order)\n                response = eval(order)\n                break\n            except Exception as e:\n                print(\"访问异常：%s\\n\" % e)\n                continue\n        try:\n            print(u'【响应状态】： %s' % (response.status_code))\n        except:\n>           raise Exception(u'接口访问异常信息：%s' % err_msg)\nE           Exception: 接口访问异常信息：\n\ncommon\\request.py:56: Exception",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "init",
+    "time" : {
+      "start" : 1567595268871,
+      "stop" : 1567595268871,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "测试http请求情况！",
+    "status" : "broken",
+    "statusMessage" : "Exception: 接口访问异常信息：",
+    "statusTrace" : "seif = <caseOne.test_calc.TestCalc object at 0x000001A83CA8B2E8>, method = 'get'\nurl = 'http://118.24.50.232:8080/demo/get/1', params = None, json_data = None\ncookies = None, headers = None, responseStatus = None, des = '测试测试用例运行情况!'\n\n    def http_req(seif,method, url, params=None, json_data=None, cookies=None,\n                      headers=None, responseStatus=None, des=None):\n        print(u'***********************测试数据日志***********************')\n        err_msg = ''\n        if des:\n            print(\"【测试目的】：%s\" % (des))\n        if len(url)>0:\n            print(u'【请求方法:%s】 %s' % (method, url))\n        if headers != None or headers == '':\n            print(u'【header】：%s' % (json.dumps(headers, indent=4)))\n        if cookies != None or cookies == '':\n            print(u'【cookies】：%s' % (json.dumps(cookies, indent=4)))\n        if params != None and params == '':\n            try:\n                print(u'【Form参数】：')\n                print(\"\\t\",json.dumps(params, indent=4, ensure_ascii=False))\n            except Exception as e:\n                err_msg += '参数json格式化异常：%s\\n' % e\n                print(params)\n    \n        if json_data != None or json_data == '':\n            try:\n                print(u'【Json参数】：')\n                print(\"\\t\",json.dumps(json_data, indent=4, ensure_ascii=False))\n    \n            except Exception as e:\n                err_msg += '参数json格式化异常：%s\\n' % e\n                print(json_data)\n        for i in range(3):\n            try:\n                if method == \"post\":\n                    order = 'requests.' + method + '(\\'' + url + '\\',json= json_data,data=params,headers=headers,cookies=cookies,timeout=10,verify = False)'\n                else:\n                    order = 'requests.' + method + '(\\'' + url + '\\',json= json_data,params=params,headers=headers,cookies=cookies,timeout=10,verify = False)'\n                print(order)\n                response = eval(order)\n                break\n            except Exception as e:\n                print(\"访问异常：%s\\n\" % e)\n                continue\n        try:\n>           print(u'【响应状态】： %s' % (response.status_code))\nE           UnboundLocalError: local variable 'response' referenced before assignment\n\ncommon\\request.py:54: UnboundLocalError\n\nDuring handling of the above exception, another exception occurred:\n\nself = <caseOne.test_calc.TestCalc object at 0x000001A83CA8B2E8>\ninit = ('http://118.24.50.232:8080', {'content-type': 'application/json'})\n\n    @allure.feature(\"测试一个http的get请求\")\n    def  test_req(self,init):\n        '''测试http请求情况！'''\n>       result = self.http_req(\"get\",url=init[0]+\"/demo/get/1\",des=\"测试测试用例运行情况!\")\n\ntestCase\\caseOne\\test_calc.py:39: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nseif = <caseOne.test_calc.TestCalc object at 0x000001A83CA8B2E8>, method = 'get'\nurl = 'http://118.24.50.232:8080/demo/get/1', params = None, json_data = None\ncookies = None, headers = None, responseStatus = None, des = '测试测试用例运行情况!'\n\n    def http_req(seif,method, url, params=None, json_data=None, cookies=None,\n                      headers=None, responseStatus=None, des=None):\n        print(u'***********************测试数据日志***********************')\n        err_msg = ''\n        if des:\n            print(\"【测试目的】：%s\" % (des))\n        if len(url)>0:\n            print(u'【请求方法:%s】 %s' % (method, url))\n        if headers != None or headers == '':\n            print(u'【header】：%s' % (json.dumps(headers, indent=4)))\n        if cookies != None or cookies == '':\n            print(u'【cookies】：%s' % (json.dumps(cookies, indent=4)))\n        if params != None and params == '':\n            try:\n                print(u'【Form参数】：')\n                print(\"\\t\",json.dumps(params, indent=4, ensure_ascii=False))\n            except Exception as e:\n                err_msg += '参数json格式化异常：%s\\n' % e\n                print(params)\n    \n        if json_data != None or json_data == '':\n            try:\n                print(u'【Json参数】：')\n                print(\"\\t\",json.dumps(json_data, indent=4, ensure_ascii=False))\n    \n            except Exception as e:\n                err_msg += '参数json格式化异常：%s\\n' % e\n                print(json_data)\n        for i in range(3):\n            try:\n                if method == \"post\":\n                    order = 'requests.' + method + '(\\'' + url + '\\',json= json_data,data=params,headers=headers,cookies=cookies,timeout=10,verify = False)'\n                else:\n                    order = 'requests.' + method + '(\\'' + url + '\\',json= json_data,params=params,headers=headers,cookies=cookies,timeout=10,verify = False)'\n                print(order)\n                response = eval(order)\n                break\n            except Exception as e:\n                print(\"访问异常：%s\\n\" % e)\n                continue\n        try:\n            print(u'【响应状态】： %s' % (response.status_code))\n        except:\n>           raise Exception(u'接口访问异常信息：%s' % err_msg)\nE           Exception: 接口访问异常信息：\n\ncommon\\request.py:56: Exception",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "a86fc9f9eee0c162",
+      "name" : "stdout",
+      "source" : "a86fc9f9eee0c162.txt",
+      "type" : "text/plain",
+      "size" : 742
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "测试一个http的get请求"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.caseOne"
+  }, {
+    "name" : "suite",
+    "value" : "test_calc"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCalc"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-PI4KT4H"
+  }, {
+    "name" : "thread",
+    "value" : "17104-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.caseOne.test_calc"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f75b2344747624e2.json",
+  "parameterValues" : [ ]
+}

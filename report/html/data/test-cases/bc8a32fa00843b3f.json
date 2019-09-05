@@ -1,0 +1,105 @@
+{
+  "uid" : "bc8a32fa00843b3f",
+  "name" : "test_add[2-4-6-用例描述2]",
+  "fullName" : "testCase.caseOne.test_calc.TestCalc#test_add",
+  "historyId" : "9fe14fe7a686528362bbcf015c04a9fe",
+  "time" : {
+    "start" : 1567598736390,
+    "stop" : 1567598737490,
+    "duration" : 1100
+  },
+  "description" : "执行加法测试用例",
+  "descriptionHtml" : "<p>执行加法测试用例</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "foo",
+    "time" : {
+      "start" : 1567598736390,
+      "stop" : 1567598736390,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "执行加法测试用例",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "ca10b2e8b2229a99",
+      "name" : "stdout",
+      "source" : "ca10b2e8b2229a99.txt",
+      "type" : "text/plain",
+      "size" : 14
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "使用pytst+allure的demo-->算数运算"
+  }, {
+    "name" : "story",
+    "value" : "测试一个加法运算"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.caseOne"
+  }, {
+    "name" : "suite",
+    "value" : "test_calc"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCalc"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-PI4KT4H"
+  }, {
+    "name" : "thread",
+    "value" : "18728-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.caseOne.test_calc"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "a",
+    "value" : "2"
+  }, {
+    "name" : "b",
+    "value" : "4"
+  }, {
+    "name" : "c",
+    "value" : "6"
+  }, {
+    "name" : "d",
+    "value" : "'用例描述2'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "bc8a32fa00843b3f.json",
+  "parameterValues" : [ "2", "4", "6", "'用例描述2'" ]
+}

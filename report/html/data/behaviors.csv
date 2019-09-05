@@ -1,0 +1,6 @@
+"Epic","Feature","Story","FAILED","BROKEN","PASSED","SKIPPED","UNKNOWN"
+"","使用pytst+allure的demo-->http请求","测试一个http post请求","0","0","2","0","0"
+"","使用pytst+allure的demo-->算数运算","测试一个加法运算","1","0","2","0","0"
+"","使用pytst+allure的demo-->http请求","测试一个http的get请求","0","0","1","0","0"
+"","使用pytst+allure的demo-->算数运算","测试一个加法运算,但是我准备跳过执行","0","0","0","1","0"
+"","使用pytst+allure的demo-->算数运算","测试一个加法运算,但是我准备故意失败测试","0","0","1","0","0"

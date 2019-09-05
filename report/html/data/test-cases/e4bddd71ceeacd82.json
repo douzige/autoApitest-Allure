@@ -1,0 +1,100 @@
+{
+  "uid" : "e4bddd71ceeacd82",
+  "name" : "test_post_def[2-data1-错误的账号密码]",
+  "fullName" : "testCase.caseOne.test_calc.TestCalc#test_post_def",
+  "historyId" : "419e1cfc1b6c6e86fc107b331d53fc82",
+  "time" : {
+    "start" : 1567595124457,
+    "stop" : 1567595124458,
+    "duration" : 1
+  },
+  "status" : "broken",
+  "statusMessage" : "Exception: 接口访问异常信息：",
+  "statusTrace" : "seif = <caseOne.test_calc.TestCalc object at 0x000001D473303860>\nmethod = 'post', url = 'http://118.24.50.232:8080/demo/update', params = None\njson_data = {'passWord': '12345', 'userName': 'admin'}, cookies = None\nheaders = {'content-type': 'application/json'}, responseStatus = None\ndes = '错误的账号密码'\n\n    def http_req(seif,method, url, params=None, json_data=None, cookies=None,\n                      headers=None, responseStatus=None, des=None):\n        print(u'***********************测试数据日志***********************')\n        err_msg = ''\n        if des:\n            print(\"【测试目的】：%s\" % (des))\n        if len(url)>0:\n            print(u'【请求方法:%s】 %s' % (method, url))\n        if headers != None or headers == '':\n            print(u'【header】：%s' % (json.dumps(headers, indent=4)))\n        if cookies != None or cookies == '':\n            print(u'【cookies】：%s' % (json.dumps(cookies, indent=4)))\n        if params != None and params == '':\n            try:\n                print(u'【Form参数】：')\n                print(\"\\t\",json.dumps(params, indent=4, ensure_ascii=False))\n            except Exception as e:\n                err_msg += '参数json格式化异常：%s\\n' % e\n                print(params)\n    \n        if json_data != None or json_data == '':\n            try:\n                print(u'【Json参数】：')\n                print(\"\\t\",json.dumps(json_data, indent=4, ensure_ascii=False))\n    \n            except Exception as e:\n                err_msg += '参数json格式化异常：%s\\n' % e\n                print(json_data)\n        for i in range(3):\n            try:\n                if method == \"post\":\n                    order = 'requests.' + method + '(\\'' + url + '\\',json= json_data,data=params,headers=headers,cookies=cookies,timeout=10,verify = False)'\n                else:\n                    order = 'requests.' + method + '(\\'' + url + '\\',json= json_data,params=params,headers=headers,cookies=cookies,timeout=10,verify = False)'\n                # print(order)\n                response = eval(order)\n                break\n            except Exception as e:\n                print(\"访问异常：%s\\n\" % e)\n                continue\n        try:\n>           print(u'【响应状态】： %s' % (response.status_code))\nE           UnboundLocalError: local variable 'response' referenced before assignment\n\ncommon\\request.py:54: UnboundLocalError\n\nDuring handling of the above exception, another exception occurred:\n\nself = <caseOne.test_calc.TestCalc object at 0x000001D473303860>, flag = 2\ndata = {'passWord': '12345', 'userName': 'admin'}, des = '错误的账号密码'\ninit = ('http://118.24.50.232:8080', {'content-type': 'application/json'})\n\n    @pytest.mark.parametrize('flag,data,des',[(1,{\"userName\":\"admin\",\"passWord\":\"123456\"},\"正确的账号密码\"),(2,{\"userName\":\"admin\",\"passWord\":\"12345\"},\"错误的账号密码\")])\n    @allure.feature(\"测试一个http post请求\")\n    def test_post_def(self,flag,data,des,init):\n        headers = {\"Content-Type\":\"application/json\"}\n>       result = self.http_req(\"post\",url=init[0]+\"/demo/update\",json_data=data,des=des,headers=init[1])\n\ntestCase\\caseOne\\test_calc.py:46: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nseif = <caseOne.test_calc.TestCalc object at 0x000001D473303860>\nmethod = 'post', url = 'http://118.24.50.232:8080/demo/update', params = None\njson_data = {'passWord': '12345', 'userName': 'admin'}, cookies = None\nheaders = {'content-type': 'application/json'}, responseStatus = None\ndes = '错误的账号密码'\n\n    def http_req(seif,method, url, params=None, json_data=None, cookies=None,\n                      headers=None, responseStatus=None, des=None):\n        print(u'***********************测试数据日志***********************')\n        err_msg = ''\n        if des:\n            print(\"【测试目的】：%s\" % (des))\n        if len(url)>0:\n            print(u'【请求方法:%s】 %s' % (method, url))\n        if headers != None or headers == '':\n            print(u'【header】：%s' % (json.dumps(headers, indent=4)))\n        if cookies != None or cookies == '':\n            print(u'【cookies】：%s' % (json.dumps(cookies, indent=4)))\n        if params != None and params == '':\n            try:\n                print(u'【Form参数】：')\n                print(\"\\t\",json.dumps(params, indent=4, ensure_ascii=False))\n            except Exception as e:\n                err_msg += '参数json格式化异常：%s\\n' % e\n                print(params)\n    \n        if json_data != None or json_data == '':\n            try:\n                print(u'【Json参数】：')\n                print(\"\\t\",json.dumps(json_data, indent=4, ensure_ascii=False))\n    \n            except Exception as e:\n                err_msg += '参数json格式化异常：%s\\n' % e\n                print(json_data)\n        for i in range(3):\n            try:\n                if method == \"post\":\n                    order = 'requests.' + method + '(\\'' + url + '\\',json= json_data,data=params,headers=headers,cookies=cookies,timeout=10,verify = False)'\n                else:\n                    order = 'requests.' + method + '(\\'' + url + '\\',json= json_data,params=params,headers=headers,cookies=cookies,timeout=10,verify = False)'\n                # print(order)\n                response = eval(order)\n                break\n            except Exception as e:\n                print(\"访问异常：%s\\n\" % e)\n                continue\n        try:\n            print(u'【响应状态】： %s' % (response.status_code))\n        except:\n>           raise Exception(u'接口访问异常信息：%s' % err_msg)\nE           Exception: 接口访问异常信息：\n\ncommon\\request.py:56: Exception",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "init",
+    "time" : {
+      "start" : 1567595124366,
+      "stop" : 1567595124366,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "Exception: 接口访问异常信息：",
+    "statusTrace" : "seif = <caseOne.test_calc.TestCalc object at 0x000001D473303860>\nmethod = 'post', url = 'http://118.24.50.232:8080/demo/update', params = None\njson_data = {'passWord': '12345', 'userName': 'admin'}, cookies = None\nheaders = {'content-type': 'application/json'}, responseStatus = None\ndes = '错误的账号密码'\n\n    def http_req(seif,method, url, params=None, json_data=None, cookies=None,\n                      headers=None, responseStatus=None, des=None):\n        print(u'***********************测试数据日志***********************')\n        err_msg = ''\n        if des:\n            print(\"【测试目的】：%s\" % (des))\n        if len(url)>0:\n            print(u'【请求方法:%s】 %s' % (method, url))\n        if headers != None or headers == '':\n            print(u'【header】：%s' % (json.dumps(headers, indent=4)))\n        if cookies != None or cookies == '':\n            print(u'【cookies】：%s' % (json.dumps(cookies, indent=4)))\n        if params != None and params == '':\n            try:\n                print(u'【Form参数】：')\n                print(\"\\t\",json.dumps(params, indent=4, ensure_ascii=False))\n            except Exception as e:\n                err_msg += '参数json格式化异常：%s\\n' % e\n                print(params)\n    \n        if json_data != None or json_data == '':\n            try:\n                print(u'【Json参数】：')\n                print(\"\\t\",json.dumps(json_data, indent=4, ensure_ascii=False))\n    \n            except Exception as e:\n                err_msg += '参数json格式化异常：%s\\n' % e\n                print(json_data)\n        for i in range(3):\n            try:\n                if method == \"post\":\n                    order = 'requests.' + method + '(\\'' + url + '\\',json= json_data,data=params,headers=headers,cookies=cookies,timeout=10,verify = False)'\n                else:\n                    order = 'requests.' + method + '(\\'' + url + '\\',json= json_data,params=params,headers=headers,cookies=cookies,timeout=10,verify = False)'\n                # print(order)\n                response = eval(order)\n                break\n            except Exception as e:\n                print(\"访问异常：%s\\n\" % e)\n                continue\n        try:\n>           print(u'【响应状态】： %s' % (response.status_code))\nE           UnboundLocalError: local variable 'response' referenced before assignment\n\ncommon\\request.py:54: UnboundLocalError\n\nDuring handling of the above exception, another exception occurred:\n\nself = <caseOne.test_calc.TestCalc object at 0x000001D473303860>, flag = 2\ndata = {'passWord': '12345', 'userName': 'admin'}, des = '错误的账号密码'\ninit = ('http://118.24.50.232:8080', {'content-type': 'application/json'})\n\n    @pytest.mark.parametrize('flag,data,des',[(1,{\"userName\":\"admin\",\"passWord\":\"123456\"},\"正确的账号密码\"),(2,{\"userName\":\"admin\",\"passWord\":\"12345\"},\"错误的账号密码\")])\n    @allure.feature(\"测试一个http post请求\")\n    def test_post_def(self,flag,data,des,init):\n        headers = {\"Content-Type\":\"application/json\"}\n>       result = self.http_req(\"post\",url=init[0]+\"/demo/update\",json_data=data,des=des,headers=init[1])\n\ntestCase\\caseOne\\test_calc.py:46: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nseif = <caseOne.test_calc.TestCalc object at 0x000001D473303860>\nmethod = 'post', url = 'http://118.24.50.232:8080/demo/update', params = None\njson_data = {'passWord': '12345', 'userName': 'admin'}, cookies = None\nheaders = {'content-type': 'application/json'}, responseStatus = None\ndes = '错误的账号密码'\n\n    def http_req(seif,method, url, params=None, json_data=None, cookies=None,\n                      headers=None, responseStatus=None, des=None):\n        print(u'***********************测试数据日志***********************')\n        err_msg = ''\n        if des:\n            print(\"【测试目的】：%s\" % (des))\n        if len(url)>0:\n            print(u'【请求方法:%s】 %s' % (method, url))\n        if headers != None or headers == '':\n            print(u'【header】：%s' % (json.dumps(headers, indent=4)))\n        if cookies != None or cookies == '':\n            print(u'【cookies】：%s' % (json.dumps(cookies, indent=4)))\n        if params != None and params == '':\n            try:\n                print(u'【Form参数】：')\n                print(\"\\t\",json.dumps(params, indent=4, ensure_ascii=False))\n            except Exception as e:\n                err_msg += '参数json格式化异常：%s\\n' % e\n                print(params)\n    \n        if json_data != None or json_data == '':\n            try:\n                print(u'【Json参数】：')\n                print(\"\\t\",json.dumps(json_data, indent=4, ensure_ascii=False))\n    \n            except Exception as e:\n                err_msg += '参数json格式化异常：%s\\n' % e\n                print(json_data)\n        for i in range(3):\n            try:\n                if method == \"post\":\n                    order = 'requests.' + method + '(\\'' + url + '\\',json= json_data,data=params,headers=headers,cookies=cookies,timeout=10,verify = False)'\n                else:\n                    order = 'requests.' + method + '(\\'' + url + '\\',json= json_data,params=params,headers=headers,cookies=cookies,timeout=10,verify = False)'\n                # print(order)\n                response = eval(order)\n                break\n            except Exception as e:\n                print(\"访问异常：%s\\n\" % e)\n                continue\n        try:\n            print(u'【响应状态】： %s' % (response.status_code))\n        except:\n>           raise Exception(u'接口访问异常信息：%s' % err_msg)\nE           Exception: 接口访问异常信息：\n\ncommon\\request.py:56: Exception",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "ac0cb57d4bd06a3e",
+      "name" : "stdout",
+      "source" : "ac0cb57d4bd06a3e.txt",
+      "type" : "text/plain",
+      "size" : 444
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "测试一个http post请求"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.caseOne"
+  }, {
+    "name" : "suite",
+    "value" : "test_calc"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCalc"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-PI4KT4H"
+  }, {
+    "name" : "thread",
+    "value" : "16344-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.caseOne.test_calc"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "data",
+    "value" : "{'userName': 'admin', 'passWord': '12345'}"
+  }, {
+    "name" : "des",
+    "value" : "'错误的账号密码'"
+  }, {
+    "name" : "flag",
+    "value" : "2"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e4bddd71ceeacd82.json",
+  "parameterValues" : [ "{'userName': 'admin', 'passWord': '12345'}", "'错误的账号密码'", "2" ]
+}

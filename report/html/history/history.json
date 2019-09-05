@@ -1,0 +1,157 @@
+{
+  "419e1cfc1b6c6e86fc107b331d53fc82" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1e0e56675abb7fac",
+      "status" : "passed",
+      "time" : {
+        "start" : 1567599656232,
+        "stop" : 1567599656255,
+        "duration" : 23
+      }
+    } ]
+  },
+  "7980ed253c002b90c1cf3f5698237c45" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "15ba987b6695a18c",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 3 == 4",
+      "time" : {
+        "start" : 1567599652738,
+        "stop" : 1567599653839,
+        "duration" : 1101
+      }
+    } ]
+  },
+  "4fff228b8f44b81259de46d52f5e93cd" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ff4096e612188285",
+      "status" : "passed",
+      "time" : {
+        "start" : 1567599656166,
+        "stop" : 1567599656198,
+        "duration" : 32
+      }
+    } ]
+  },
+  "11d90497ca798b825984d2fffd7ee1d0" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c3258563cc980e16",
+      "status" : "passed",
+      "statusDetails" : "XPASS 我就是想测试skipif",
+      "time" : {
+        "start" : 1567599656150,
+        "stop" : 1567599656150,
+        "duration" : 0
+      }
+    } ]
+  },
+  "d1915f746d0a10a1aae0ca3ce0238aae" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "37a285df5a5618df",
+      "status" : "passed",
+      "time" : {
+        "start" : 1567599656203,
+        "stop" : 1567599656225,
+        "duration" : 22
+      }
+    } ]
+  },
+  "4f033552d51dd42fba7b3f7a02775691" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2ac5d19ff3d296dc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1567599655020,
+        "stop" : 1567599656120,
+        "duration" : 1100
+      }
+    } ]
+  },
+  "502db7183990bb91e855c1a8a30a6481" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7de162e5bf25d74",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: 我就是想测试skipif",
+      "time" : {
+        "start" : 1567599656139,
+        "stop" : 1567599656139,
+        "duration" : 0
+      }
+    } ]
+  },
+  "9fe14fe7a686528362bbcf015c04a9fe" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "27d982e75025b445",
+      "status" : "passed",
+      "time" : {
+        "start" : 1567599653911,
+        "stop" : 1567599655012,
+        "duration" : 1101
+      }
+    } ]
+  }
+}

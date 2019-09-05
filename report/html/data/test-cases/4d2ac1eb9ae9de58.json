@@ -1,0 +1,63 @@
+{
+  "uid" : "4d2ac1eb9ae9de58",
+  "name" : "test_add_a",
+  "fullName" : "testCase.caseOne.test_calc.TestCalc#test_add_a",
+  "historyId" : "502db7183990bb91e855c1a8a30a6481",
+  "time" : {
+    "start" : 1567599529627,
+    "stop" : 1567599529627,
+    "duration" : 0
+  },
+  "description" : "测试根据条件跳过这条用例",
+  "descriptionHtml" : "<p>测试根据条件跳过这条用例</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "Skipped: 我就是想测试skipif",
+  "statusTrace" : "('testCase\\\\caseOne\\\\test_calc.py', 36, 'Skipped: 我就是想测试skipif')",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试一个加法运算,但是我准备跳过执行"
+  }, {
+    "name" : "feature",
+    "value" : "使用pytst+allure的demo-->算数运算"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.caseOne"
+  }, {
+    "name" : "suite",
+    "value" : "test_calc"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCalc"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-PI4KT4H"
+  }, {
+    "name" : "thread",
+    "value" : "15332-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.caseOne.test_calc"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4d2ac1eb9ae9de58.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,12 @@
+***********************测试数据日志***********************
+【测试目的】：测试测试用例运行情况!
+【请求方法:get】 http://118.24.50.232:8080/demo/get/1
+requests.get('http://118.24.50.232:8080/demo/get/1',json= json_data,params=params,headers=headers,cookies=cookies,timeout=10,verify = False)
+访问异常：name 'requests' is not defined
+
+requests.get('http://118.24.50.232:8080/demo/get/1',json= json_data,params=params,headers=headers,cookies=cookies,timeout=10,verify = False)
+访问异常：name 'requests' is not defined
+
+requests.get('http://118.24.50.232:8080/demo/get/1',json= json_data,params=params,headers=headers,cookies=cookies,timeout=10,verify = False)
+访问异常：name 'requests' is not defined
+
